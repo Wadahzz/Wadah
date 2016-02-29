@@ -1,0 +1,130 @@
+<div data-options="dxView : { name: 'ItmesDirEdit', mode: 'edit', title: 'Itmes dir' } " >
+    <div data-bind="dxCommand: { onExecute: handleSave, id: 'save', title: 'Save', icon: 'save' } "></div>
+    <div data-bind="dxCommand: { onExecute: handleCancel, id: 'cancel', behavior: 'back', title: 'Cancel', icon: 'close' }" ></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-edit-view dx-content-background dx-form-background" data-bind="dxDeferRendering: { showLoadIndicator: true, staggerItemSelector: '.dx-field', animation: 'edit-item-rendered', renderWhen: isReady }" >
+        <div data-bind="dxScrollView: { }">
+            <div class="dx-fieldset">
+                <div class="dx-field">
+                    <div class="dx-field-label">Itmid: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.itmid, readOnly: true }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Itmname: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: itmesdir.itmname, placeholder: 'Enter Itmname' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Barcode: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: itmesdir.barcode, placeholder: 'Enter Barcode' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Grid: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.grid, placeholder: 'Enter Grid' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Untid: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.untid, placeholder: 'Enter Untid' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Sizee: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: itmesdir.sizee, placeholder: 'Enter Sizee' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Openstoke: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.openstoke, placeholder: 'Enter Openstoke' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Qstoke: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.qstoke, placeholder: 'Enter Qstoke' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Opanesalse: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.opanesalse, placeholder: 'Enter Opanesalse' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Qsales: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.qsales, placeholder: 'Enter Qsales' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Openshowroom: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.openshowroom, placeholder: 'Enter Openshowroom' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Qshowroom: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.qshowroom, placeholder: 'Enter Qshowroom' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Tyid: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.tyid, placeholder: 'Enter Tyid' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Colores: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: itmesdir.colores, placeholder: 'Enter Colores' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Pakeg: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: itmesdir.pakeg, placeholder: 'Enter Pakeg' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Buyprise: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.buyprise, placeholder: 'Enter Buyprise' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Salesratio: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.salesratio, placeholder: 'Enter Salesratio' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Salesprise: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.salesprise, placeholder: 'Enter Salesprise' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Lastbuybillid: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.lastbuybillid, placeholder: 'Enter Lastbuybillid' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Lastbuydate: </div>
+                    <div class="dx-field-value" data-bind="dxDateBox: { value: itmesdir.lastbuydate, placeholder: 'Enter Lastbuydate', format: 'date' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Lastexchangeid: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.lastexchangeid, placeholder: 'Enter Lastexchangeid' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Lastexchangedate: </div>
+                    <div class="dx-field-value" data-bind="dxDateBox: { value: itmesdir.lastexchangedate, placeholder: 'Enter Lastexchangedate', format: 'date' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Cutter: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.cutter, placeholder: 'Enter Cutter' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Box: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.box, placeholder: 'Enter Box' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Shelf: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.Shelf, placeholder: 'Enter Shelf' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Indexid: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.indexid, placeholder: 'Enter Indexid' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Cyl: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: itmesdir.Cyl, placeholder: 'Enter Cyl' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">PSH: </div>
+                    <div class="dx-field-value" data-bind="dxTextBox: { value: itmesdir.PSH, placeholder: 'Enter PSH' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Minimum: </div>
+                    <div class="dx-field-value" data-bind="dxNumberBox: { value: itmesdir.minimum, placeholder: 'Enter Minimum' }"></div>
+                </div>
+                <div class="dx-field">
+                    <div class="dx-field-label">Expirydate: </div>
+                    <div class="dx-field-value" data-bind="dxDateBox: { value: itmesdir.Expirydate, placeholder: 'Enter Expirydate', format: 'date' }"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,132 @@
+<div data-options="dxView : { name: 'ItmesDirDetails', title: 'Itmes dir' } " >
+    <div data-bind="dxCommand: { onExecute: '#ItmesDirEdit/{id}', direction: 'none', id: 'edit', title: 'Edit', icon: 'edit' }"></div>
+    <div data-bind="dxCommand: { onExecute: handleDelete, id: 'delete', title: 'Delete', icon: 'remove' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-detail-view dx-content-background" data-bind="dxDeferRendering: { showLoadIndicator: true, staggerItemSelector: 'dx-fieldset-header,.dx-field', animation: 'detail-item-rendered', renderWhen: isReady }" >
+        <div data-bind="dxScrollView: { }">
+            <div class="dx-fieldset">
+                <div class="dx-fieldset-header" data-bind="text: itmesdir.itmname"></div>
+				<div class="dx-field">
+					<div class="dx-field-label">Itmid</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.itmid"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Itmname</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.itmname"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Barcode</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.barcode"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Grid</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.grid"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Untid</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.untid"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Sizee</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.sizee"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Openstoke</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.openstoke"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Qstoke</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.qstoke"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Opanesalse</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.opanesalse"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Qsales</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.qsales"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Openshowroom</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.openshowroom"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Qshowroom</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.qshowroom"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Tyid</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.tyid"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Colores</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.colores"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Pakeg</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.pakeg"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Buyprise</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.buyprise"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Salesratio</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.salesratio"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Salesprise</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.salesprise"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Lastbuybillid</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.lastbuybillid"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Lastbuydate</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.lastbuydate"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Lastexchangeid</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.lastexchangeid"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Lastexchangedate</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.lastexchangedate"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Cutter</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.cutter"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Box</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.box"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Shelf</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.Shelf"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Indexid</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.indexid"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Cyl</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.Cyl"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">PSH</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.PSH"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Minimum</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.minimum"></div>
+				</div>
+				<div class="dx-field">
+					<div class="dx-field-label">Expirydate</div>
+					<div class="dx-field-value-static" data-bind="text: itmesdir.Expirydate"></div>
+				</div>
+			</div>
+            <div data-options="dxContentPlaceholder : { name: 'view-footer', animation: 'none' } " ></div>
+        </div>
+    </div>
+</div>
